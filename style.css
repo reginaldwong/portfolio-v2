@@ -1,0 +1,85 @@
+/* FONT */
+@font-face {
+  src: url(fonts/CircularStd-Book.otf);
+  font-family: circular;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: circular, sans-serif;
+  background-color: #fff;
+  color: #2b2928;
+  overscroll-behavior: none;
+  max-width: 1440px;
+}
+
+/* HEADER */
+
+#styled-header {
+  height: 73vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8vh;
+  padding-top: 2rem;
+}
+
+.logo {
+  margin-right: 9rem;
+}
+
+.header-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  display: none;
+}
+
+.header-menu-item {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #2b2928;
+}
+
+.header-menu-fold div {
+  width: 30px;
+  height: 3.5px;
+  background-color: #2b2928;
+  margin: 5px;
+}
+
+.header-title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-top: 5.5rem;
+  width: 50%;
+  margin-left: 3rem;
+}
+
+.header-subtitle {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+/* BODY */
+
+.projects-title {
+  font-size: 1.75rem;
+  margin-top: 1.7rem;
+  margin-left: 3rem;
+  font-weight: 500;
+}
