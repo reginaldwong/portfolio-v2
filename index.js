@@ -12,3 +12,15 @@ VANTA.FOG({
   speed: 3,
   zoom: 1.5,
 });
+
+const menuSlide = () => {
+  const menu = document.querySelector('.header-menu-fold');
+  const menuItem = document.querySelector('.header-menu');
+
+  menu.addEventListener('click', () => {
+    menuItem.classList.toggle('menu-active');
+    menu.classList.toggle('toggle');
+  });
+};
+
+menuSlide();
