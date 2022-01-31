@@ -42,16 +42,24 @@ nav {
   margin-right: 9rem;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
+/* a:visited {
+  color: inherit;
+} */
+
 .header-menu {
   position: absolute;
   right: 0px;
-  height: 100%;
-  top: 15vh;
-  width: 100%;
+  height: 100vh;
+  top: 0vh;
+  width: 70%;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #2b2928;
   background-color: rgba(0, 0, 0, 0.8);
@@ -61,7 +69,7 @@ nav {
 
 .header-menu-item {
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #efefef;
 }
 
@@ -70,7 +78,7 @@ nav {
 }
 
 .header-menu-fold div {
-  width: 30px;
+  width: 25px;
   height: 3.5px;
   background-color: #2b2928;
   margin: 5px;
@@ -113,4 +121,26 @@ nav {
   margin-top: 1.7rem;
   margin-left: 3rem;
   font-weight: 500;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+  width: 80%;
+  border: 1px solid #2b2928;
+}
+
+.project-title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-stack {
+  font-size: 0.7rem;
 }

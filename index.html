@@ -8,35 +8,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="styled-header">
-      <nav class="navbar">
-        <div class="logo">
-          <h4>r / w</h4>
+    <div class="app">
+      <header id="styled-header">
+        <nav class="navbar">
+          <div class="logo">
+            <h4><a href="https://www.google.ca">r / w</a></h4>
+          </div>
+          <ul class="header-menu">
+            <li><a href="#projects" class="header-menu-item">projects</a></li>
+            <li>
+              <a href="#technologies" class="header-menu-item">technologies</a>
+            </li>
+            <li><a href="#about" class="header-menu-item">about</a></li>
+          </ul>
+          <div class="header-menu-fold">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <div class="styled-header-info">
+          <h1 class="header-title">reginald wong</h1>
+          <p class="header-subtitle">software developer / ui designer</p>
         </div>
-        <ul class="header-menu">
-          <li><a href="#projects" class="header-menu-item">projects</a></li>
-          <li>
-            <a href="#technologies" class="header-menu-item">technologies</a>
-          </li>
-          <li><a href="#about" class="header-menu-item">about</a></li>
-        </ul>
-        <div class="header-menu-fold">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+      </header>
+
+      <section class="projects">
+        <h2 class="projects-title">projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3 class="project-title">JS-808</h3>
+            <p class="project-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eum
+              deserunt qui. Aliquam odio unde, tempora harum reprehenderit
+              dolorem itaque!
+            </p>
+            <p class="project-stack">react, styled components</p>
+          </div>
+          <div class="project">
+            <h3 class="project-title">WeatherNow</h3>
+            <p class="project-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eum
+              deserunt qui. Aliquam odio unde, tempora harum reprehenderit
+              dolorem itaque!
+            </p>
+            <p class="project-stack">react, styled components</p>
+          </div>
+          <div class="project">
+            <h3 class="project-title">Meet</h3>
+            <p class="project-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eum
+              deserunt qui. Aliquam odio unde, tempora harum reprehenderit
+              dolorem itaque!
+            </p>
+            <p class="project-stack">react, styled components</p>
+          </div>
         </div>
-      </nav>
-      <div class="styled-header-info">
-        <h1 class="header-title">reginald wong</h1>
-        <p class="header-subtitle">software developer / ui designer</p>
-      </div>
-    </header>
-
-    <section class="projects">
-      <h2 class="projects-title">projects</h2>
-      <div class="projects-grid"></div>
-    </section>
-
+      </section>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     <script src="index.js"></script>
