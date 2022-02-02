@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Reginald Wong</title>
+    <title>Reginald Wong | Software Developer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,9 +17,11 @@
           <ul class="header-menu">
             <li><a href="#projects" class="header-menu-item">projects</a></li>
             <li>
+              <a href="#about" class="header-menu-item">about</a>
+            </li>
+            <li>
               <a href="#technologies" class="header-menu-item">technologies</a>
             </li>
-            <li><a href="#about" class="header-menu-item">about</a></li>
           </ul>
           <div class="header-menu-fold">
             <div class="line1"></div>
@@ -33,7 +35,7 @@
         </div>
       </header>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="projects-title">projects</h2>
         <div class="projects-grid">
           <div class="project">
@@ -48,17 +50,19 @@
               <a
                 href="https://github.com/reginaldwong/js-drum-machine"
                 class="project-code"
+                target="_blank"
                 >source code</a
               >
               <a
                 href="https://reginaldwong.github.io/js-drum-machine/"
                 class="project-demo"
+                target="_blank"
                 >demo</a
               >
             </div>
           </div>
           <div class="project">
-            <h3 class="project-title">taskify</h3>
+            <h3 class="project-title">Taskify</h3>
             <p class="project-description">
               This todo list app created with React and TypeScript utilizes
               React hooks alongside TypeScript PropTypes and DefaultProps to
@@ -72,11 +76,13 @@
               <a
                 href="https://github.com/reginaldwong/task-app"
                 class="project-code"
+                target="_blank"
                 >source code</a
               >
               <a
                 href="https://reginaldwong.github.io/task-app/"
                 class="project-demo"
+                target="_blank"
                 >demo</a
               >
             </div>
@@ -95,11 +101,13 @@
               <a
                 href="https://github.com/reginaldwong/react-weather-app"
                 class="project-code"
+                target="_blank"
                 >source code</a
               >
               <a
                 href="https://reginaldwong.github.io/react-weather-app/"
                 class="project-demo"
+                target="_blank"
                 >demo</a
               >
             </div>
@@ -113,8 +121,18 @@
             </p>
             <p class="project-stack">react | styled components</p>
             <div class="project-links">
-              <a href="" class="project-code">source code</a>
-              <a href="" class="project-demo">demo</a>
+              <a
+                href="https://github.com/reginaldwong/landing-page-meet"
+                class="project-code"
+                target="_blank"
+                >source code</a
+              >
+              <a
+                href="https://reginaldwong.github.io/landing-page-meet/"
+                class="project-demo"
+                target="_blank"
+                >demo</a
+              >
             </div>
           </div>
           <div class="project">
@@ -130,11 +148,13 @@
               <a
                 href="https://github.com/reginaldwong/react-recipe-app"
                 class="project-code"
+                target="_blank"
                 >source code</a
               >
               <a
                 href="https://reginaldwong.github.io/react-recipe-app/"
                 class="project-demo"
+                target="_blank"
                 >demo</a
               >
             </div>
@@ -142,8 +162,31 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="about-title">about me</h2>
+        <div class="about-body">
+          <p class="body1">
+            Hi! I am a software developer and I am very passionate about
+            lifelong learning, technology & music. My interest in web
+            development began growing up as a kid using services like Freewebs
+            to design and create my own websites. Years later, I have revisited
+            my childhood hobby and realized it would be a perfect fit combining
+            my creative side to design and my logical side to code.
+          </p>
+          <p>
+            I'm familiar with a variety of programming languages, including
+            JavaScript (ES6+), HTML, CSS, jQuery, React and TypeScript. More
+            recently, I've started diving into the back end by learning Node.js,
+            MongoDB, and Express.js. I am comfortable working individually or as
+            part of a team. If you're looking for a developer to add to your
+            team, I'd love to have a chat!
+          </p>
+        </div>
+      </section>
+
+      <section class="tech" id="technologies">
+        <h2 class="tech-title">tech</h2>
+        <p class="tech-subtitle">Here's my stack</p>
       </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
