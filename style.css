@@ -21,6 +21,7 @@ body {
   overscroll-behavior: none;
   max-width: 1440px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -252,6 +253,7 @@ textarea {
   background: transparent;
   border: 1px solid #2b2928;
   font-family: circular;
+  border-radius: 5px;
 }
 
 button {
@@ -262,4 +264,5 @@ button {
   color: #efefef;
   font-family: circular;
   margin-bottom: 2rem;
+  border-radius: 5px;
 }

@@ -9,7 +9,7 @@ VANTA.FOG({
   lowlightColor: 0x13848c,
   baseColor: 0xfce9e9,
   blurFactor: 0.6,
-  speed: 3,
+  speed: 2.5,
   zoom: 1.5,
 });
 
