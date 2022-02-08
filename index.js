@@ -10,7 +10,7 @@ VANTA.FOG({
   baseColor: 0xfce9e9,
   blurFactor: 0.6,
   speed: 2.5,
-  zoom: 1.5,
+  zoom: 0.95,
 });
 
 const menuSlide = () => {
