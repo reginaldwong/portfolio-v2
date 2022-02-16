@@ -13,13 +13,28 @@ VANTA.FOG({
   zoom: 0.95,
 });
 
+// MOBILE NAVBAR
+
 const menuSlide = () => {
   const menu = document.querySelector('.header-menu-fold');
   const menuItem = document.querySelector('.header-menu');
+  const html = document.querySelector('html');
+  const menuItemLink = document.querySelectorAll('.header-menu-item');
 
+  // TOGGLE MOBILE NAVBAR
   menu.addEventListener('click', () => {
     menuItem.classList.toggle('menu-active');
     menu.classList.toggle('toggle');
+    html.classList.toggle('menu-open');
+  });
+
+  // COLLAPSE MOBILE NAVBAR WHEN A LINK IS CLICKED
+  menuItemLink.forEach(link => {
+    link.addEventListener('click', () => {
+      menuItem.classList.toggle('menu-active');
+      menu.classList.toggle('toggle');
+      html.classList.toggle('menu-open');
+    });
   });
 };
 

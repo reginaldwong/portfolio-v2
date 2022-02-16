@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <div class="app">
+    <div class="app" id="home">
       <header id="styled-header">
         <nav class="navbar">
           <div class="logo">
@@ -20,9 +20,7 @@
           </div>
           <ul class="header-menu">
             <li><a href="#projects" class="header-menu-item">projects</a></li>
-            <li>
-              <a href="#about" class="header-menu-item">about</a>
-            </li>
+            <li><a href="#about" class="header-menu-item">about</a></li>
             <li>
               <a href="#technologies" class="header-menu-item">technologies</a>
             </li>
@@ -36,7 +34,7 @@
         </nav>
         <div class="styled-header-info">
           <h1 class="header-title">reginald wong</h1>
-          <p class="header-subtitle">software developer / ui designer</p>
+          <p class="header-subtitle">software developer</p>
         </div>
       </header>
 
@@ -44,28 +42,31 @@
         <h2 class="projects-title">projects</h2>
         <div class="projects-grid">
           <div class="project">
-            <h3 class="project-title">JS-808</h3>
-            <p class="project-description">
-              Inspired by the Roland TR-808, this drum machine written in
-              JavaScript uses event listeners to play tr-808 drum samples
-              according to the key pressed by the user.
-            </p>
-            <p class="project-stack">javascript | html | css</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/reginaldwong/js-drum-machine"
-                class="project-code"
-                target="_blank"
-                >source code</a
-              >
-              <a
-                href="https://reginaldwong.github.io/js-drum-machine/"
-                class="project-demo"
-                target="_blank"
-                >demo</a
-              >
+            <div class="card-inner">
+              <h3 class="project-title">JS-808</h3>
+              <p class="project-description">
+                Inspired by the Roland TR-808, this drum machine written in
+                JavaScript uses event listeners to play tr-808 drum samples
+                according to the key pressed by the user.
+              </p>
+              <p class="project-stack">javascript | html | css</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/reginaldwong/js-drum-machine"
+                  class="project-code"
+                  target="_blank"
+                  >source code</a
+                >
+                <a
+                  href="https://reginaldwong.github.io/js-drum-machine/"
+                  class="project-demo"
+                  target="_blank"
+                  >demo</a
+                >
+              </div>
             </div>
           </div>
+
           <div class="project">
             <h3 class="project-title">Taskify</h3>
             <p class="project-description">
@@ -92,6 +93,7 @@
               >
             </div>
           </div>
+
           <div class="project">
             <h3 class="project-title">WeatherNow</h3>
             <p class="project-description">
@@ -117,6 +119,7 @@
               >
             </div>
           </div>
+
           <div class="project">
             <h3 class="project-title">Meet</h3>
             <p class="project-description">
@@ -140,6 +143,7 @@
               >
             </div>
           </div>
+
           <div class="project">
             <h3 class="project-title">RecipeFinder</h3>
             <p class="project-description">
@@ -240,10 +244,10 @@
         <div class="footer-column">
           <h4 class="footer-logo">r / w</h4>
           <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">work</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#projects">work</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div>
         <div class="footer-links">
