@@ -359,6 +359,7 @@ footer {
   .tech-title,
   .contact-title {
     font-size: 2.25rem;
+    margin-left: 3rem;
   }
 
   .projects-grid {
@@ -426,5 +427,28 @@ footer {
 
   .copyright {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-menu-fold {
+    display: none;
+  }
+
+  .header-menu {
+    all: initial;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: circular;
+  }
+  .header-menu a {
+    color: #2b2928;
+    margin: 0 0.5rem;
+  }
+
+  /* REMOVE SCROLL LOCK FROM MOBILE MENU */
+  html.menu-open {
+    overflow-y: scroll;
   }
 }
