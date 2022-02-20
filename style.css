@@ -45,9 +45,6 @@ nav {
 
 .logo a {
   text-decoration: none;
-}
-
-.logo a:visited {
   color: inherit;
 }
 
@@ -62,6 +59,12 @@ nav {
   background-color: #7a918d;
   transform: translateX(100%);
   transition: transform 0.4s ease-in;
+}
+
+/* PREVENT SCROLLING WHEN MOBILE NAVBAR IS OPEN */
+html.menu-open {
+  overflow-y: hidden;
+  height: 100%;
 }
 
 .header-menu-item {
@@ -112,11 +115,6 @@ nav {
 }
 
 /* BODY */
-
-html.menu-open {
-  overflow-y: hidden;
-  height: 100%;
-}
 
 .projects-title {
   font-size: 1.75rem;
@@ -176,7 +174,7 @@ html.menu-open {
 
 .about-body {
   width: 80%;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   margin: 0 auto;
 }
@@ -212,13 +210,6 @@ html.menu-open {
   margin-top: 2rem;
 }
 
-.tech-subtitle {
-  width: 80%;
-  font-size: 0.75rem;
-  line-height: 18px;
-  margin: 0 auto;
-}
-
 /* CONTACT */
 
 .contact-title {
@@ -231,7 +222,7 @@ html.menu-open {
 
 .contact-body {
   width: 80%;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   margin: 0 auto;
   margin-bottom: 1.5rem;
@@ -252,7 +243,7 @@ select,
 textarea {
   padding: 1.4rem;
   background: transparent;
-  border: 1px solid #2b2928;
+  border: 1px solid #7a918d;
   font-family: circular;
   border-radius: 5px;
 }
@@ -262,10 +253,20 @@ button {
   cursor: pointer;
   background: #4caf50;
   border: none;
-  color: #efefef;
+  color: white;
   font-family: circular;
   margin-bottom: 2rem;
   border-radius: 5px;
+}
+
+.contact-button {
+  transition-duration: 0.4s;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #4caf50;
+  border: 1px solid #4caf50;
 }
 
 /* FOOTER */
@@ -290,9 +291,6 @@ footer {
 
 .footer-column a {
   text-decoration: none;
-}
-
-.footer-column a:visited {
   color: inherit;
 }
 
@@ -310,9 +308,6 @@ footer {
 
 .footer-links a {
   font-size: 1.5rem;
-}
-
-.footer-links a {
   color: inherit;
 }
 
@@ -320,4 +315,116 @@ footer {
   margin-top: 2rem;
   text-align: center;
   font-size: 0.75rem;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 375px) {
+  .header-menu-item {
+    line-height: 2rem;
+  }
+  .header-title {
+    font-size: 2.75rem;
+  }
+  .header-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-right: 30rem;
+    font-size: 2rem;
+  }
+
+  .header-menu-item {
+    line-height: 3rem;
+  }
+
+  .header-title {
+    margin-left: 3rem;
+    font-size: 3.25rem;
+  }
+  .header-subtitle {
+    margin-left: 3rem;
+    font-size: 2rem;
+  }
+
+  .header-menu-item {
+    font-size: 1.5rem;
+  }
+
+  .projects-title,
+  .about-title,
+  .tech-title,
+  .contact-title {
+    font-size: 2.25rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 50%;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-description,
+  .project-stack,
+  .project-code,
+  .project-demo {
+    font-size: 1.25rem;
+  }
+
+  .about-body {
+    font-size: 1.25rem;
+  }
+
+  .tech-languages h4,
+  .tech-frameworks h4,
+  .tech-ui h4 {
+    font-size: 1.5rem;
+  }
+
+  .tech-languages li,
+  .tech-frameworks li,
+  .tech-ui li {
+    font-size: 1.25rem;
+  }
+
+  .contact-body {
+    font-size: 1.25rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+
+  .footer-logo {
+    font-size: 2.5rem;
+  }
+
+  .footer-column li {
+    font-size: 1.25rem;
+  }
+
+  .footer-links a {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
 }
